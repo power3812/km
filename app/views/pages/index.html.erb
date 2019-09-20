@@ -1,3 +1,22 @@
+<body>
+<% if @color %>
+<div>
+  <table>
+    <tr>
+      <th>色の名前</th>
+      <td><%= @color.color_name %></td>
+    </tr>
+    <tr>
+      <th>イメージ</th>
+      <td><%= @color.color_image %></td>
+    </tr>
+  </table>
+</div>
+<% else %>
+<div>
+ボタンを押してね！
+</div>
+<% end %>
 <%= form_tag("/pages/api") do %>
 <p><input type="submit" value="ボタン"></p>
 <% end %>
