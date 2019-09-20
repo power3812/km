@@ -10,11 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20190920100728) do
+=======
+ActiveRecord::Schema.define(version: 20190920080442) do
+>>>>>>> 600fab36c2f2912426131e3559481b9382969f79
 
   create_table "colors", force: :cascade do |t|
-    t.string "color_name"
-    t.string "color_image"
+    t.string "name"
+    t.string "image"
+    t.integer "r"
+    t.integer "g"
+    t.integer "b"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "colos", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
