@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace 'api', {format:'json'} do
-    resources 'subscribe'
+    resources 'device'
   end
   get 'pages/index'
 end

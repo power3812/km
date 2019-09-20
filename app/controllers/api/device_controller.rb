@@ -1,5 +1,5 @@
 module Api
-  class SubscribeController < ApplicationController
+  class DeviceController < ApplicationController
     protect_from_forgery
     def index
       history=History.new
