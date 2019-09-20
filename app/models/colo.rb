@@ -1,0 +1,2 @@
+class Colo < ApplicationRecord
+end
