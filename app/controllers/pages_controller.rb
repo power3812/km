@@ -4,8 +4,8 @@ class PagesController < ApplicationController
 
   def api
     @color=Color.new(
-      color_name: "red",
-      color_image: "fire"
+      name: "red",
+      image: "fire"
     )
     @color.save
   end
