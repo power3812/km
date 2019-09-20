@@ -5,5 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-#Color.create!(name: "black", image: "dark", r: 0, g: 0, b: 0)
-Rireki.create!(r: 0, g: 0, b: 0)
+Color.create!(name: "black", image: "dark", r: 0, g: 0, b: 0)
+History.create!(r: 0, g: 0, b: 0)
