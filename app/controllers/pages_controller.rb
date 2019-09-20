@@ -1,18 +1,14 @@
 class PagesController < ApplicationController
   def index
     @history=History.last
+    @color=nil
     if @history
       #定義に基づいた条件式
-      @id=
+      @id=@history.id
       @color=Color.find_by(id: @id)
+      respond_to do |format|
+        format.html
+      end
     end
-  end
-
-  def api
-    history=History.new
-    history.r=params[:r]
-    history.g=params[:g]
-    history.b=params[:b]
-    history.save
   end
 end
