@@ -1,4 +1,8 @@
-<body>
+<%= form_tag("/pages/api") do %>
+<div class="button_wrapper">
+  <a class="btn-circle-3d">BUTTON</a>
+</div>
+<% end %>
 <% if @color %>
 <div>
   <table>
@@ -15,10 +19,5 @@
 <% else %>
 <div>
 ボタンを押してね！
-</div>
-<% end %>
-<%= form_tag("/pages/api") do %>
-<div class="button_wrapper">
-  <a href="#" class="btn-circle-3d">BUTTON</a>
 </div>
 <% end %>
