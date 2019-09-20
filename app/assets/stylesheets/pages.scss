@@ -1,7 +1,7 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.btn-circle-3d {
+//.btn-circle-3d {
   display: inline-block;
   text-decoration: none;
   background: #ff8181;
@@ -18,13 +18,13 @@
   transition: .4s;
 }
 
-.btn-circle-3d:active {
+//.btn-circle-3d:active {
   -webkit-transform: translateY(2px);
   transform: translateY(2px);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   border-bottom: none;
 }
 
-.button_wrapper{
+//.button_wrapper{
    text-align:center;
 }

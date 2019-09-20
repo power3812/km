@@ -10,7 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190920104731) do
+
+ActiveRecord::Schema.define(version: 20190920080442) do
 
   create_table "colors", force: :cascade do |t|
     t.string "name"
@@ -27,17 +28,6 @@ ActiveRecord::Schema.define(version: 20190920104731) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "hi", force: :cascade do |t|
-    t.integer "r"
-    t.integer "g"
-    t.integer "b"
-  end
-
-  create_table "his", force: :cascade do |t|
-    t.integer "r"
-    t.integer "g"
-    t.integer "b"
-  end
 
   create_table "histories", force: :cascade do |t|
     t.integer "r"
@@ -49,6 +39,8 @@ ActiveRecord::Schema.define(version: 20190920104731) do
     t.integer "r"
     t.integer "g"
     t.integer "b"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
