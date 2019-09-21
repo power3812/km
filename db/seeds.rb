@@ -1,6 +1,10 @@
 require 'csv'
 csv_data = CSV.read('db/colorimages.csv', headers: true)
 csv_data.each do |data|
-  Color.create!(name: data[1], image: data[2], r: data[3], g: data[4], b: data[5])
+  r=data[3].to_i
+  g=data[4].to_i
+  b=data[5].to_i
+  abs=r*r+g*g+b*b
+  Color.create!(name: data[1], image: data[2], r: r, g: g, b: b, abs: abs)
 end
-History.create!(r: 0, g: 0, b: 0)
+History.create!(r: 0, g: 0, b: 0, abs: 0)

@@ -4,6 +4,7 @@ class CreateHistories < ActiveRecord::Migration[5.1]
       t.integer :r
       t.integer :g
       t.integer :b
+      t.integer :abs
 
       t.timestamps
     end
