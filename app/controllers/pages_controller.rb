@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
   def index
     @history=History.last
-    @color=nil
     @colors=Color.all
     if @history
       min=1000000000
@@ -14,7 +13,6 @@ class PagesController < ApplicationController
           @b=t.b
         end
       end
-      #定義に基づいた条件式
       @color=Color.find_by(r:@r,g:@g,b:@b)
     end
     respond_to do |format|

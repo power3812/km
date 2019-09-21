@@ -1,0 +1,2 @@
+class JanHistory < ApplicationRecord
+end

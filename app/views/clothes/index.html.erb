@@ -1,0 +1,7 @@
+<div class="container">
+<%= form_with url: "/clothes/create", method: :post do |form| %>
+  <%= form.text_field :jan, placeholder: 'JANコード' %>
+  <%= form.submit %>
+<% end %>
+<%= render :partial => "table" %>
+</div>

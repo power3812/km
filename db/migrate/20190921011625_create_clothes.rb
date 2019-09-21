@@ -6,6 +6,7 @@ class CreateClothes < ActiveRecord::Migration[5.1]
       t.integer :r
       t.integer :g
       t.integer :b
+      t.integer :color_id
 
       t.timestamps
     end

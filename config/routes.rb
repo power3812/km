@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   end
   get 'pages/index'
   post 'pages/create'
+  get 'clothes/index'
+  post 'clothes/create'
 end
