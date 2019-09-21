@@ -16,10 +16,13 @@ class PagesController < ApplicationController
       end
       #定義に基づいた条件式
       @color=Color.find_by(r:@r,g:@g,b:@b)
-      respond_to do |format|
-        format.html
-      end
+    end
+    respond_to do |format|
+      format.html
     end
   end
 
+  def create
+    redirect_back(fallback_location: "/pages/index")
+  end
 end

@@ -3,4 +3,5 @@ Rails.application.routes.draw do
     resources 'device'
   end
   get 'pages/index'
+  post 'pages/create'
 end

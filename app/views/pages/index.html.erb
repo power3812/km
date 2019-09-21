@@ -1,23 +1,6 @@
-<%= form_tag("/pages/relord") do %>
+<%= form_tag("/pages/create") do %>
 <div class="button_wrapper">
-  <a class="btn-circle-3d">BUTTON</a>
+  <a class="btn-circle-3d" href="/pages/index">BUTTON</a>
 </div>
 <% end %>
-<% if @color %>
-<div>
-  <table>
-    <tr>
-      <th>色の名前</th>
-      <td><%= @color.name %></td>
-    </tr>
-    <tr>
-      <th>イメージ</th>
-      <td><%= @color.image %></td>
-    </tr>
-  </table>
-</div>
-<% else %>
-<div>
-ボタンを押してね！
-</div>
-<% end %>
+<%= render :partial => "table" %>
