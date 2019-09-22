@@ -1,6 +1,7 @@
 body {
   background-color: #dddddd;
   display: flex;
+  font-size: 2rem;
   justify-content: center;
   width: 100%;
 }
@@ -34,4 +35,9 @@ body {
 
 .button_wrapper {
   text-align: center;
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+  height: 2rem;
 }
