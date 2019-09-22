@@ -1,24 +1,42 @@
 # README
+To check the color impressions.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## use case
+1. Check the color's impressions.
+    1. POST a RGB code to api (api/device)
+    2. Check the color name and impressions on the browser (pages/index)
+2. Check the product color in the shop
+    1. Shop: Record color and design of the product.
+    2. Customer (has a handicap about color): Check the product's color information on mobile. 
 
-Things you may want to cover:
+## setup
+```
+$ bundle install
+$ rails db:migrate
+$ rails db:seed
+```
 
-* Ruby version
+## local serve
+```
+$ rails s
+```
 
-* System dependencies
+### view
+1. http://localhost:3000/pages/index
+2. http://localhost:3000/clothes/index
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### api
+1. POST http://localhost:3000/api/device
+  |  key  | value type |  value  |
+  | :---: | :--------: | :-----: |
+  |   r   |  integer   | 0 - 255 |
+  |   g   |  integer   | 0 - 255 |
+  |   b   |  integer   | 0 - 255 |
+1. POST http://localhost:3000/api/shop
+  |  key  | value type |          value           |
+  | :---: | :--------: | :----------------------: |
+  | name  |   string   |   product name or kind   |
+  |  jan  |   string   | product id like JAN code |
+  |   r   |  integer   |         0 - 255          |
+  |   g   |  integer   |         0 - 255          |
+  |   b   |  integer   |         0 - 255          |
