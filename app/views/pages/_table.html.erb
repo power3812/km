@@ -1,9 +1,6 @@
 <% if @color %>
 <div>
-  <audio controls>
-  <source src="/assets/audio/black.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+  <%= audio_tag "#{@color.id}.mp3", autoplay: true, controls: true %>
   <table>
     <tr>
       <th>色の名前</th>
