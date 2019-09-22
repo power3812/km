@@ -1,5 +1,6 @@
 <% if @color %>
 <div>
+  <%= audio_tag "#{@color.id}.mp3", autoplay: true, controls: true %>
   <table>
     <tr>
       <th>色の名前</th>
