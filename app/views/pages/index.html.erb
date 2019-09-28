@@ -1,8 +1,8 @@
 <div class="container">
-<%= form_tag("/pages/clothes") do %>
 <div class="button_wrapper">
-  <a class="btn-circle-3d" href="/pages/index">BUTTON</a>
+  <div class="btn-circle-3d" >
+    <%= link_to("ボタン","/pages/create",method: :post) %>
+  </div>
 </div>
-<% end %>
 <%= render :partial => "table" %>
 </div>

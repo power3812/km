@@ -21,6 +21,7 @@ class PagesController < ApplicationController
   end
 
   def create
-    redirect_back(fallback_location: "/pages/index")
+    redirect_to "/pages/index"
+#    redirect_back(fallback_location: "/pages/index")
   end
 end
